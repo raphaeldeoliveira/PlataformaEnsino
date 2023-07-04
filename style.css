@@ -1,0 +1,1193 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+
+@font-face {
+    font-family: code-font;
+    src: url(midias/fontes/CODE\ Bold.otf);
+ }
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Source Sans Pro';
+    text-decoration: none;
+}
+
+:root {
+    --font-code1: #da70d6;
+    --font-code2: #9cdcfe;
+    --font-code3: #dcdcaa;
+    --font-code4: #f0d700;
+    --font-code5: #1e296e;
+    --font-code6: #b0cea8;
+    --font-code7: #bd6534;
+    --font-code8: #3d582b;
+}
+
+html {
+    /* a cada 1 rem será considerado 10px */
+    font-size: 100%;
+}
+
+body {
+    background-color: #e7e1e1;
+}
+
+.cabeca {
+    position: fixed;
+    background-color: #ffffb3;
+    width: 100%;
+    z-index: 1;
+}
+
+#margem-topo {
+    height: 0.1px;
+}
+
+.margem-header {
+    margin-top: 157px;
+}
+
+#banner {
+    z-index: 0;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    background-color: #ffffb3;
+    border-bottom: 1px solid black;
+}
+
+#card-botao1 {
+    margin: auto;
+}
+
+#botao {
+    align-items: center;
+    background-color: #6a381f;
+    color: white;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    font-size: 1.35rem;
+}
+
+#botao:hover {
+    background-color: hsla(20, 55%, 27%, 0.8);
+    transition-duration: 0.5s;
+}
+
+#logo1 {
+    width: 21.8rem;
+    height: 6.25rem;
+    padding-top: 1.87rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1.87rem;
+}
+
+#textoEBotao {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    max-width: 660px;
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo1 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 3.4em;
+}
+
+#titulo2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.texto1 {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+
+/*main*/
+
+#problemas {
+    width: 90%;
+    max-width: 880px;
+    background-color: white;
+    margin: auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+}
+
+.tags {
+    text-align: center;
+    border-radius: 4px;
+    background-color: #eea16e;
+    border: 1px #9e6c4b solid;
+    color: black;
+    font-style: italic;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+/* para o checkbox não aparecer (caixinha) */
+input {
+    width: 0px;
+    height: 0px;
+}
+
+.tags:hover {
+    background-color: hsla(24, 79%, 68%, 0.5);
+    border: 1px hsla(24, 36%, 46%, 0.5) solid;
+}
+
+#tagsescolha1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+#tagsescolha2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.card-problema {
+    width: 90%;
+    background-color: #e7e1e1;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.titulo3 {
+    font-weight: normal;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo8 {
+    font-size: 1.2rem;
+}
+
+.texto2 {
+    font-size: 0.9rem;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.texto3 {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.container-tag {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-tag1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.tag {
+    text-align: center;
+    width: 100%;
+    max-width: 108px;
+    height: 100%;
+    max-height: 32px;
+    line-height: 32px;
+    background-color: #8de5d2;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: black;
+}
+
+#paginas {
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+.botao2 {
+    margin-right: 1.25rem;
+    width: 100%;
+    max-width: 2.5rem;
+    height: 100%;
+    max-height: 2.5rem;
+    line-height: 2.5rem;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid black;
+}
+
+/* -------------------------------------------
+
+ deixar esse hover abaixo como um active; Como se ele ficasse dessa cor quando estivesse na 
+ pagina 1, se estiver na segunda pagina vai estar no 2 (como nas pesquisas do google)
+
+ o hover aqui sera atualizado para somente ficar mais claro, a inversão de cores é para quando 
+ esta na pagina (ativado)
+
+ */
+
+.botao2:hover {
+    background-color: orangered;
+    color: white;
+}
+
+#botao2:hover {
+    background-color: orangered;
+    color: white;
+}
+
+#trespontinhos {
+    color: black;
+    border: none;
+    text-align: center;
+    font-size: 1.3em;
+    width: 100%;
+    max-width: 50px;
+    height: 100%;
+    max-height: 50px;
+    line-height: 50px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+/* stilos da pagina sobrenostrue */
+
+.card-equipe {
+    text-align: center;
+}
+
+.foto-equipe {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 50%;
+    border: 5px solid black;
+    /*definir o tamanho conforme o jquery; Aqui esta 216x216*/
+}
+
+#equipe {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+    row-gap: 50px;
+    margin-bottom: 40px;
+}
+
+#equipe-1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    row-gap: 50px;
+    margin-bottom: 40px;
+}
+
+.titulo4 {
+    margin-bottom: 14px;
+    font-size: 3.8rem;
+    font-weight: bolder;
+}
+
+#card-sobrenos1 {
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 36px;
+}
+
+.paragrafo {
+    text-align: justify;
+}
+
+#card-sobrenos2 {
+    padding-top: 40px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo5 {
+    font-size: 2.7rem;
+    font-weight: bolder;
+}
+
+.titulo6 {
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+#main1 {
+    background-color: #ffffb3;
+    border-bottom: 1px solid black;
+    padding-bottom: 50px;
+}
+
+#main2 {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+}
+
+#nossa-equipe {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.nome-contr {
+    padding-top: 12px;
+    font-size: 1.3em;
+}
+
+.cargo-contr {
+    font-size: 1.2em;
+    font-weight: normal;
+    padding-top: 4px;
+    padding-bottom: 10px;
+}
+
+.midias-sociais {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-rede-socias {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 50px;
+    background-color: black;
+}
+
+.card-nosp {
+    /*
+    width: 100%;
+    max-width: 650px;*/
+    margin: auto;
+    padding-right: 30px;
+}
+
+.card-nosp-1 {/*
+    width: 100%;
+    max-width: 650px;
+    margin-left: 20px;
+    margin-right: 40px;*/
+    margin: auto;
+    padding-right: 36px;
+}
+
+#icon-facebook:hover {
+    background-color: #3b579d;
+}
+
+#icon-github:hover {
+    background-color: #9b59b6;
+}
+
+#icon-instagram:hover {
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+#icon-linkedin:hover {
+    background-color: #00669c;
+}
+
+#icon-twitter:hover {
+    background-color: #50abf1;
+}
+
+#icon-whatsapp:hover {
+    background-color: #57f16d;
+}
+
+#card-exercicio {
+    background-color: #ffffb3;
+    margin: auto;
+    width: 70%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+#card-problema {
+    background-color: white;
+    margin: auto;
+    width: 72.5%;
+    border: 1px solid black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#titulo-problema {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+#descricao-problema {
+    font-size: 1.4em;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.espacamento {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.logos-linguagens {
+    width: 100%;
+    max-width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+#titulo-solucao {
+    padding-top: 20px;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+#nav-linguagens {
+    justify-content: space-evenly;
+}
+
+#autor {
+    font-weight: normal;
+    font-size: 1.4em;
+    padding-right: 120px;
+    text-align: end;
+}
+
+#card-codigo {
+    width: 95%;
+    background-color: rgb(209, 209, 209);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#input-output {
+    width: 95%;
+    background-color: rgb(209, 209, 209);
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#text-codigo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.card-en-sa {
+    font-size: 1.3em;
+    color: white;
+    background-color: gray;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 23vw;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: bolder;
+
+}
+
+.card-en-sa1 {
+    font-size: 1.3em;
+    color: white;
+    background-color: gray;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 23vw;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    margin-right: 20px;
+    margin-left: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#card-en-sa-baixo {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(220, 220, 220);
+    width: 23vw;
+    height: 100%;
+    max-height: 50px;
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+#card-en-sa1-baixo {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(220, 220, 220);
+    width: 23vw;
+    height: 100%;
+    max-height: 50px;
+    border: 1px solid black;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+#pagina1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50vw;
+}
+
+#pagina2 {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50vw;
+    text-align: center;
+}
+
+.titulo7 {
+    text-align: center;
+    font-weight: normal;
+}
+
+#titulo8 {
+    text-align: center;
+}
+
+#responsavel {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+#ver-solucao {
+    background-color: #6a381f;
+    color: white;
+    font-weight: bolder;
+    padding: 20px;
+    border-radius: 6px;
+    font-size: 2.7em;
+    line-height: 320px;
+}
+
+#ver-solucao:hover {
+    background-color: hsla(20, 55%, 27%, 0.8);
+    transition-duration: 0.5s;
+}
+
+#descricao-problema1 {
+    margin: 20px;
+}
+
+.imagem-linguagem {
+    width: 100%;
+    max-width: 50px;
+    border-radius: 50px;
+    border: 10px solid lightgray;
+    margin-left: 20px;
+}
+
+.imagem-linguagem:hover {
+    border: 10px solid white;
+}
+
+#problema {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+.font-monospace {
+    font-family: sans-serif;
+    font-weight: 1.3em;
+}
+
+.font-monospace span {
+    font-family: sans-serif;
+    font-weight: 1.3em;
+}
+
+.code-font1 {
+    color: var(--font-code1);
+}
+
+.code-font2 {
+    color: var(--font-code2);
+}
+
+.code-font3 {
+    color: var(--font-code3);
+}
+
+.code-font4 {
+    color: var(--font-code4);
+}
+
+.code-font5 {
+    color: var(--font-code5);
+}
+
+.code-font6 {
+    color: var(--font-code6);
+}
+
+.code-font7 {
+    color: var(--font-code7);
+}
+
+.code-font8 {
+    color: var(--font-code8);
+}
+
+.espaco {
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+#botao3 {
+    width: 100%;
+    max-width: 2.5rem;
+    height: 100%;
+    max-height: 2.5rem;
+    line-height: 2.5rem;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid black;
+}
+
+#botao3:hover {
+    background-color: orangered;
+    color: white;
+}
+
+/* Media Querys */
+
+@media (max-width: 340px) {
+    .tag {
+        margin-left: 10px;
+    }
+
+    /*#problema {
+        margin-left: 0rem;
+        margin-right: 0px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }*/
+}
+
+@media (max-width: 380px) {
+
+    .tag {
+        max-width: 116px;
+        max-height: 34.4px;
+        line-height: 34.4px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    hr {
+        width: 88vw;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 60%;
+    }
+
+    main {
+        font-size: 1.334rem;
+    }
+
+    #titulo2 {
+        font-size: 3.6rem;
+    }
+
+    #botao {
+        padding-left: 2.75rem;
+        padding-right: 2.75rem;
+        padding-top: 1.54rem;
+        padding-bottom: 1.54rem;
+        border-radius: 5px;
+        font-size: 2rem;
+    }
+
+    .tags {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.52rem;
+        padding-bottom: 0.52rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        font-size: 1.56rem;
+    }
+
+    .tags1 {
+        margin-bottom: 20px;
+        flex-grow: 1;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 0.52rem;
+        padding-bottom: 0.52rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    #tagsescolha1 {
+        display: grid;
+        flex-wrap: wrap;
+    }
+
+    #alinhamento1 {
+        margin-left: none;
+    }
+
+    .botao2 {
+        margin-right: 1.71rem;
+        max-width: 4.27rem;
+        max-height: 4.27rem;
+        line-height: 4.27rem;
+        font-size: 1.75rem;
+    }
+
+    .sumir {
+        display: none;
+    }
+
+    #botao3 {
+        display: none;
+    }
+    .tirarespaco {
+        margin-right: 0px;
+    }
+
+    .titulo6 {
+        font-size: 3.4em;
+    }
+
+    #nossa-equipe {
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+
+    .texto3 {
+        font-size: 1.6rem;
+    }
+
+    .titulo5 {
+        font-size: 2.8rem;
+    }
+
+    .titulo8 {
+        font-size: 1.58rem;
+    }
+
+    .texto2 {
+        font-size: 1.19rem;
+    }
+
+    .tag {
+        max-width: 129.6x;
+    	max-height: 38.4px;
+    	line-height: 38.4px;
+    	font-size: 1.19rem;
+    }
+
+}
+
+@media (min-width: 451px) and (max-width: 830px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    .tags {
+        font-size: 1.25rem;
+    }
+
+    #tagsescolha1 {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    #alinhamento1 {
+        margin-left: 80px;
+    }
+
+    .botao2 {
+        /* aumento de 10% em todos os parametros pra nao ficar tao pequeno por conta da redução dos 80% */
+        margin-right: 1.375rem;
+        max-width: 3.437rem;
+        max-height: 3.437rem;
+        line-height: 3.437rem;
+        font-size: 1.43rem;
+    }
+
+    #nossa-equipe {
+        padding-top: 45px;
+        padding-bottom: 37.5px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .margem-header {
+        margin-top: 99px;
+    }
+
+    #equipe {
+        grid-template-columns: auto auto;
+    }
+
+    #equipe-1 {
+        grid-template-columns: auto auto;
+    }
+
+    .card-nosp {
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .card-nosp-1 {
+        padding-right: 20px;
+    }
+
+    #card-sobrenos1 {
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #card-sobrenos2 {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    #problema {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    #pagina2 {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .card-en-sa {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        width: 40vw;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    
+    }
+    
+    .card-en-sa1 {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        width: 40vw;
+        margin-right: 0.2rem;
+        margin-left: 0px;
+    }
+    
+    #card-en-sa-baixo {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        width: 40vw;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    
+    #card-en-sa1-baixo {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        width: 40vw;
+        margin-right: 0.2rem;
+        margin-left: 0px;
+    }
+
+}
+
+@media (min-width: 401px) and (max-width: 639px) {
+
+    hr {
+        width: 92vw;
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    .foto-equipe {
+        max-width: 136px;
+    }
+
+    .card-rede-socias {
+        max-width: 29px;
+    }
+
+    .container-tag {
+        flex-direction: column;
+    }
+
+    #pagina1 {
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #pagina2 {
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+/*
+    #pagina2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+ */   
+    #problema {
+        margin-left: 2rem;
+        margin-right: 0px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 641px) {
+
+    .card-en-sa {
+        font-size: 1.3em;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        width: 42vw;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .card-en-sa1 {
+        font-size: 1.3em;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        width: 42vw;
+        margin-right: 2rem;
+        margin-left: 0rem;
+    }
+    
+    #card-en-sa-baixo {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        width: 42vw;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    
+    #card-en-sa1-baixo {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        width: 42vw;
+        margin-right: 2rem;
+        margin-left: 0rem;
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 830px) {
+
+    .margem-header {
+        margin-top: 131px;
+    }
+
+    #equipe {
+        grid-template-columns: auto auto auto;
+    }
+
+    .card-nosp {
+        padding-right: 36px;
+    }
+    
+    .card-nosp-1 {
+        margin-top: 20px;
+        margin-left: 0px;
+        padding-right: 36px;
+    }
+
+    .titulo8 {
+        font-size: 1.44rem;
+    }
+
+    .texto2 {
+        font-size: 1.08rem;
+    }
+
+    .tag {
+        max-width: 129.6x;
+    	max-height: 38.4px;
+    	line-height: 38.4px;
+    	font-size: 1.08rem;
+    }
+
+}
+
+@media (max-width: 829px) {
+
+    .container-tag1 {
+        margin-bottom: 20px;
+    }
+
+    #card-sobrenos2 {
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+
+    .titulo5 {
+        padding-bottom: 16px;
+    }
+
+    #problemas {
+        width: 100%;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;       
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+    }
+
+    #paginas {
+        margin-bottom: 0px;
+    }
+
+    #botao3 {
+        max-width: 3.437rem;
+        max-height: 3.437rem;
+        line-height: 3.437rem;
+        font-size: 1.43rem;
+    }
+
+    #main1 {
+        padding-bottom: none;
+    }
+
+    .card-rede-socias {
+        max-width: 44px;
+    }
+
+}
+
+@media (min-width: 641px) and (max-width: 1030px) {
+
+    .foto-equipe {
+        max-width: 170px;
+    }
+
+}
+
+@media (max-width: 1030px) {
+
+    #equipe-1 {
+        margin-bottom: 0px;
+    }
+
+    #main2 {
+        max-width: 100%;
+        margin: auto;
+        background-color: white;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+        margin-bottom: none;
+        padding-bottom: 30px;
+    }
+
+}
+
+/* media querys:
+
+* 480px // Extra small screen
+* 768px // Small screen
+* 992px // Medium screen
+* 1200px // Large screen
+* 1600px // Extra larger screen
+* 1900px // Extra larger screen

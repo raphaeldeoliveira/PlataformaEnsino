@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 0001</title>
+    <link rel="shortcut icon" href="midias/imagens/imagens-IFSC/favicon-ifsc.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="margem-topo"></div>
+    <header class="cabeca">
+        <a href="index.html"><img id="logo1" src="midias/imagens/imagens-IFSC/ifsc_logo.png" alt=""></a>
+    </header>
+    <main>
+        <section class="container-tag margem-header">
+            <article id="pagina1">
+                <h3 class="titulo7">Problema 1</h3>
+                <h2 id="titulo8">Titulo do problema</h2>
+                <h3 class="titulo7">Referencia: Autor | Livro | Capitulo</h3>
+                <h3 id="responsavel" class="titulo7">Responsavel: Nome do aluno</h3>
+                <hr>
+                <p id="descricao-problema1">Descrição do problema: Faça um programa que receba o número de horas trabalhadas e o valor do salário mínimo, calcule e mostre o salário a receber, seguindo estas regras:
+                    <br>a) a hora trabalhada vale a metade do salário mínimo. 
+                    <br>b) o salário bruto equivale ao número de horas trabalhadas multiplicado pelo valor da hora trabalhada. 
+                    <br>c) o imposto equivale a 3% do salário bruto. 
+                    <br>d) o salário a receber equivale ao salário bruto menos o imposto.</p>
+                <article class="container-tag1">
+                    <section>
+                        <div class="card-en-sa">INPUT</div>
+                        <div id="card-en-sa-baixo"><span class="espaco">40</span> <span class="espaco">10</span> <br> <span class="espaco">80</span> <span class="espaco">50</span> 
+                                
+                        </div>
+                    </section>
+                    <section>
+                        <div class="card-en-sa1">OUTPUT</div>
+                        <div id="card-en-sa1-baixo"><span class="espaco">
+                            194.0</span> <br> <span class="espaco">1940.0</span>
+                        </div>
+                    </section>
+                </article>
+            </article>
+            <aside id="pagina2">
+                <!-- botão para abrir as soluções -->
+                <!--<a id="ver-solucao" href="">Ver Solução</a> -->
+                <nav class="container-tag1">
+                    <a href=""><img class="imagem-linguagem" src="midias/imagens/logos-linguagens/Java.png" alt=""></a>
+                    <a href=""><img class="imagem-linguagem" src="midias/imagens/logos-linguagens/Javascript.png" alt=""></a>
+                    <a href=""><img class="imagem-linguagem" src="midias/imagens/logos-linguagens/Python.png" alt=""></a>
+                </nav>
+                <div id="problema">
+                    <!-- não sei uma forma de fazer isso, mas para ficar bonito, era bom que ficasse dessa forma, como no VSCode ou outra IDE. Usar spans e variaveis de CSS não é um bom metodo, mas fiz aqui pra ficar como exemplo -->
+                    <code class="font-monospace">
+                        <span class="code-font2">horasTrabalhadas</span> = <span class="code-font8">float</span><span class="code-font4">(</span><span class="code-font3">input</span><span class="code-font1">(</span><span class="code-font7">"Digite o numero de horas trabalhadas: "</span><span class="code-font1">)</span><span class="code-font4">)</span> <br> <br>
+                        <span class="code-font2">salarioMinimo</span> = <span class="code-font8">float</span><span class="code-font4">(</span><span class="code-font3">input</span><span class="code-font1">(</span><span class="code-font7">"Digite o valor do salário minimo: "</span><span class="code-font1">)</span><span class="code-font4">)</span> <br><br>
+                        <span class="code-font2">horaTrabalhada</span> = <span class="code-font2">salarioMinimo</span> / <span class="code-font6">2</span> <br> <span class="code-font2">bruto</span> = <span class="code-font2">horasTrabalhadas</span> * <span class="code-font2">horaTrabalhada</span> <br> <span class="code-font2">imposto</span> = <span class="code-font4">(</span><span class="code-font2">bruto</span> * <span class="code-font6">3</span><span class="code-font4">)</span> / <span class="code-font6">100</span> <br> <span class="code-font2">receber</span> = <span class="code-font2">bruto</span> - <span class="code-font2">imposto</span> <br><br> <span class="code-font3">print</span><span class="code-font4">(</span><span class="code-font7">""</span><span class="code-font4">)</span> <br> <span class="code-font3">print</span><span class="code-font4">(</span><span class="code-font7">"Saldo atual:</span> <span class="code-font5">{}</span><span class="code-font7">"</span>.<span class="code-font3">format</span><span class="code-font1">(</span><span class="code-font2">receber</span><span class="code-font1">)</span><span class="code-font4">)</span>
+                    </code>
+                </div>
+            </aside>
+        </section>
+        
+    </main>
+    <footer>
+        <img id="logo1" src="midias/imagens/imagens-IFSC/rodape_ifsc.png" alt="logo do ifsc">
+    </footer>
+</body>
+</html>
